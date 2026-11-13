@@ -394,6 +394,8 @@
 467	common	open_tree_attr		sys_open_tree_attr
 468	common	file_getattr		sys_file_getattr
 469	common	file_setattr		sys_file_setattr
+470 64      kv_put          sys_kv_put
+471 64      kv_get          sys_kv_get
 
 #
 # Due to a historical design error, certain syscalls are numbered differently
