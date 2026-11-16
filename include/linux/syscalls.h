@@ -309,6 +309,8 @@ static inline int is_syscall_trace_event(struct trace_event_call *tp_event)
 #ifndef CONFIG_ARCH_HAS_SYSCALL_WRAPPER
 asmlinkage long sys_kv_put(unsigned long long key, char* usr_val);
 asmlinkage long sys_kv_get(unsigned long long key, char* usr_buf, size_t buf_size);
+asmlinkage long sys_kv_put_linear(unsigned long long key, char* usr_val);
+asmlinkage long sys_kv_get_linear(unsigned long long key, char* usr_buf, size_t buf_size);
 
 asmlinkage long sys_io_setup(unsigned nr_reqs, aio_context_t __user *ctx);
 asmlinkage long sys_io_destroy(aio_context_t ctx);

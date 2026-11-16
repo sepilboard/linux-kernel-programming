@@ -209,3 +209,4 @@ $(obj)/kheaders.md5: $(obj)/kheaders-srclist FORCE
 clean-files := kheaders.md5 kheaders-srclist kheaders-objlist
 
 obj-y += kv_map.o
+obj-y += kv_map_linear.o
